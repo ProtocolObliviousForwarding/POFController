@@ -1,0 +1,66 @@
+v1.1.7 - 29 Sept. 2013
+----------------------
+	* Optimize code, add more parameters checking on PofManager module
+	* Fix bugs 
+		- Fix the exception if there is an empty table without any flow entry when load a *.db file 
+		- fix the writing authority error on target folder on MAC OSX system (Thanks Lina)
+
+v1.1.6 - 12 Aug. 2013
+---------------------
+	* Optimize code
+	* Fix bugs
+
+v1.1.5 - 26 July 2013
+---------------------
+	* Finish Console GUI
+		- User could input commands to control POF Controller and switches via console UI.
+		- For the command line format, please see the description in ConsoleUIMainPanel.java and ConsoleUI.java 
+		- Default is still Swing GUI
+		- To launch console UI, need to modify the com.huawei.ipr.pof.gui.comm.POFGUI.mainpanel in the file floodlightdefault.properties:
+			> Default value is swing. 
+			> Modify it to "console" to launch standalone Console UI
+			> Modify it to "swing, console" to launch both SwingGUI and ConsoleUI
+	* Add interfaces in PofManager
+	* Optimize code
+	* Fix bugs
+
+
+v1.1.4 - 16 July 2013
+---------------------
+	* Add Console GUI 
+		- Different GUIs could be launched together, or stand alone
+		- Not finished all console function yet. (finished: display protocol/switch/table/entry, set port, add protocol/table)
+		- Default is still Swing GUI
+	* Move metadata into PMDatabase
+	* Add interfaces in PofManager
+	* Optimize code
+	* Fix bugs
+
+v1.1.3 - 08 July 2013
+---------------------
+	* Add functions on GUI:
+		- user could modify a existing flow entry by right-clicking the flow entry in list2
+		- user could delete the instruction/action by right-clicking instruction/action item if the entry's status is not read-only
+	* Optimize the code on GUI
+		- introduce FlowEntry/GroupEntry to store the entry and its editing status, using currentEntry to pass the entry information and status
+		- Optimize the code of PlistX/GroupListX
+		- Optimize the file/folder structure
+	* Fix bugs on GUI
+
+v1.1.2 - 21 June 2013
+---------------------
+	* Fix bugs on GUI
+
+v1.1.1 - 19 June 2013
+---------------------
+	* Fix bugs on GUI
+
+v1.1.0 - 9 June 2013
+---------------------
+	* Use new Swing GUI instead of SWT GUI
+	* Fix bugs
+
+v1.0.0 - 15 Mar. 2013
+---------------------
+	* Initial version
+	

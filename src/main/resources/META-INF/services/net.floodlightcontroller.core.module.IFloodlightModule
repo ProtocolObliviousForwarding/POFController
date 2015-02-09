@@ -1,0 +1,13 @@
+net.floodlightcontroller.core.FloodlightProvider					#IFloodlightModule										Services = IFloodlightProviderService
+net.floodlightcontroller.storage.memory.MemoryStorageSource			#extends[NoSqlStorageSource extends AbstractStorageSource implements IStorageSourceService, IFloodlightModule]  							Services = IStorageSourceService
+
+net.floodlightcontroller.counter.CounterStore						#implements IFloodlightModule/ICounterStoreService		Service = ICounterStoreService
+net.floodlightcontroller.counter.NullCounterStore					#implements IFloodlightModule/ICounterStoreService		Service = ICounterStoreService
+net.floodlightcontroller.threadpool.ThreadPool						#implements IThreadPoolService/IFloodlightModule		Service = IThreadPoolService
+net.floodlightcontroller.perfmon.NullPktInProcessingTime			#implements IFloodlightModule/IPktInProcessingTimeService									Service = IPktInProcessingTimeService
+net.floodlightcontroller.restserver.RestApiServer					#implements IFloodlightModule/IRestApiService			Service = IRestApiService
+
+com.huawei.ipr.pof.bypassmanager.OFMessagBypassManager				#implements IOFMessagBypassManagerService/IOFMessageListener/IFloodlightModule				Service = IOFMessagBypassManagerService
+com.huawei.ipr.pof.manager.PofManager								#implements IFloodlightModule/IPMService		Service = IPMService
+com.huawei.ipr.pof.manager.database.PMDatabase						#implements IFloodlightModule/IPMDatabaseService	Service = IPMDatabaseService
+com.huawei.ipr.pof.gui.comm.POFGUI									#implements IFloodlightModule/IGUIService		Service = IGUIService

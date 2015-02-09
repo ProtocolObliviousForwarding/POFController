@@ -1,0 +1,10 @@
+POFController
+
+POFController is a cross-platform, Java-based OpenFlow Controller.
+
+POFController using Apache and BSD-license (see the file COPYING).
+
+POFController project is based on the floodlight controller project (v0.85). Floodlight was forked from the Beacon controller, originally developed by David Erickson at Stanford.
+
+For more please visit:
+	http://www.poforwarding.org
